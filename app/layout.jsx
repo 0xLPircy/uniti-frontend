@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Button from "./components/Button";
+import Image from "next/image";
+import logo from "@/public/Logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +19,17 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={inter.className}>
           <div className="flex justify-between">
-            <img
+            <Image src={logo} height={150} width={150} className="ml-5 mt-4" />
+            {/* <img
               src="./logo.png"
               alt=""
               className="w-[150px] h-[150px] ml-5 mt-4"
-            />
+            /> */}
             <Button
               text="Connect Wallet"
-              btnName={"hover:shadow-[18px_12px_0px_#000000] connect-btn mt-9 border-black border rounded-xl text-lg"}
+              btnName={
+                "hover:shadow-[18px_12px_0px_#000000] connect-btn mt-9 border-black border rounded-xl text-lg"
+              }
             />
           </div>
           {children}
