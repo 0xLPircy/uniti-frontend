@@ -71,7 +71,7 @@ const store =
         nftName: "Kurioai",
         nftAmount: 10,
         nftDescription: "this is a description for kurioai nft sample",
-        nftImage: '/ethglobal.jpeg',
+        nftImage: "/ethglobal.jpeg",
         guidelines:
           "this is sample guidelines for the submission of kurioai nft and how to blah blah",
       },
@@ -81,7 +81,7 @@ const store =
         nftName: "Goku",
         nftAmount: 10,
         nftDescription: "this is a description for goku nft sample",
-        nftImage: '/ethglobal.jpeg',
+        nftImage: "/ethglobal.jpeg",
         guidelines:
           "this is sample guidelines for the submission of goku nft and how to blah blah",
       },
@@ -91,7 +91,7 @@ const store =
         nftName: "Kurioai",
         nftAmount: 10,
         nftDescription: "this is a description for kurioai nft sample",
-        nftImage: '/ethglobal.jpeg',
+        nftImage: "/ethglobal.jpeg",
         guidelines:
           "this is sample guidelines for the submission of goku nft and how to blah blah",
       },
@@ -101,7 +101,7 @@ const store =
         nftName: "Goku",
         nftAmount: 10,
         nftDescription: "this is a description for goku nft sample",
-        nftImage: '/ethglobal.jpeg',
+        nftImage: "/ethglobal.jpeg",
         guidelines:
           "this is sample guidelines for the submission of goku nft and how to blah blah",
       },
@@ -129,8 +129,9 @@ const store =
           },
         ],
       })),
-    currentCampaign: '',
-    changeCurrentCampaign: (name) => set((store) => ({ currentCampaign: name })),
+    currentCampaign: "Quest",
+    changeCurrentCampaign: (name) =>
+      set((store) => ({ currentCampaign: name })),
     currentProgram: "Polygon Advocates",
     changeCurrentProgram: (name) => set((store) => ({ currentProgram: name })),
   });
